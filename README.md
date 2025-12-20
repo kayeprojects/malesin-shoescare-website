@@ -1,73 +1,112 @@
-# Welcome to your Lovable project
+# malesin_shoescare Monorepo
 
-## Project info
+A production-ready monorepo for **malesin_shoescare** shoe cleaning service, featuring a neo-brutalist landing page and CleanStride admin dashboard.
 
-**URL**: https://lovable.dev/projects/af84008e-6b7d-4fea-be63-14ff9b548711
+## 🏗️ Project Structure
 
-## How can I edit this code?
-
-There are several ways of editing your application.
-
-**Use Lovable**
-
-Simply visit the [Lovable Project](https://lovable.dev/projects/af84008e-6b7d-4fea-be63-14ff9b548711) and start prompting.
-
-Changes made via Lovable will be committed automatically to this repo.
-
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+```
+malesin-shoescare/
+├── apps/
+│   ├── landing/          # Public landing page (Vite + React)
+│   └── admin/            # Admin dashboard (Vite + React)
+├── packages/
+│   └── ui/               # Shared UI components & design tokens
+├── src/                  # Legacy admin (original codebase)
+└── pnpm-workspace.yaml   # Workspace configuration
 ```
 
-**Edit a file directly in GitHub**
+## 🚀 Quick Start
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+### Prerequisites
 
-**Use GitHub Codespaces**
+- Node.js 18+
+- pnpm (`npm install -g pnpm`)
+- Laravel backend running on port 8000
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+### Installation
 
-## What technologies are used for this project?
+```bash
+# Install dependencies
+pnpm install
 
-This project is built with:
+# Start development servers
+pnpm dev:landing    # Landing page on http://localhost:5173
+pnpm dev:admin      # Admin panel on http://localhost:5174
+pnpm dev            # Legacy admin on http://localhost:8080
+```
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+### Available Scripts
 
-## How can I deploy this project?
+| Command              | Description                   |
+| -------------------- | ----------------------------- |
+| `pnpm dev:landing`   | Start landing page dev server |
+| `pnpm dev:admin`     | Start admin panel dev server  |
+| `pnpm dev`           | Start legacy admin dev server |
+| `pnpm build:all`     | Build all apps                |
+| `pnpm build:landing` | Build landing page            |
+| `pnpm build:admin`   | Build admin panel             |
 
-Simply open [Lovable](https://lovable.dev/projects/af84008e-6b7d-4fea-be63-14ff9b548711) and click on Share -> Publish.
+## 📱 Apps
 
-## Can I connect a custom domain to my Lovable project?
+### Landing Page (`apps/landing`)
 
-Yes, you can!
+- **URL**: http://localhost:5173
+- **Style**: Neo-brutalist design
+- **Features**:
+  - Services showcase (from backend API)
+  - Online booking form
+  - Customer reviews
+  - Gallery carousel
+  - WhatsApp & Instagram integration
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+### Admin Dashboard (`apps/admin`)
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+- **URL**: http://localhost:5174
+- **Style**: Clean, professional
+- **Features**:
+  - Order management
+  - Service management
+  - Transaction reports
+  - Export PDF/Excel/CSV
+  - Photo upload
+
+## 🔗 Backend API
+
+The frontend connects to a Laravel backend at `http://localhost:8000`.
+
+### Public Endpoints (no auth)
+
+| Method | Endpoint               | Description          |
+| ------ | ---------------------- | -------------------- |
+| GET    | `/api/public/services` | List active services |
+| POST   | `/api/public/booking`  | Create booking       |
+
+### Protected Endpoints (requires auth)
+
+| Method | Endpoint               | Description          |
+| ------ | ---------------------- | -------------------- |
+| POST   | `/api/login`           | User login           |
+| GET    | `/api/orders`          | List orders          |
+| POST   | `/api/orders`          | Create order         |
+| GET    | `/api/services`        | List all services    |
+| GET    | `/api/dashboard/stats` | Dashboard statistics |
+
+## 📍 Business Info
+
+- **Location**: TirtoUtomo, Landungsari Malang
+- **Hours**: 08:30 - 17:00 (Mon-Fri)
+- **WhatsApp**: +62 882-1080-6864
+- **Instagram**: [@malesin_shoecare](https://instagram.com/malesin_shoecare)
+
+## 🛠️ Tech Stack
+
+- **Frontend**: React 18, Vite, TypeScript
+- **Styling**: Tailwind CSS
+- **UI Components**: Radix UI, Shadcn/ui
+- **State**: TanStack Query
+- **Monorepo**: pnpm workspaces
+- **Backend**: Laravel, MySQL, Sanctum
+
+## 📝 License
+
+Private - malesin_shoescare © 2025
