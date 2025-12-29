@@ -45,7 +45,7 @@ pnpm dev:admin      # http://localhost:5174
 
 ## 🔗 Backend API
 
-Requires [malesin-shoescare-api](https://github.com/kayeprojects/malesin-shoescare-api) running on `http://localhost:8000`
+Requires [cleanstride-api](https://github.com/kayeprojects/cleanstride-api) running on `http://localhost:8000`
 
 ## 🛠️ Tech Stack
 
