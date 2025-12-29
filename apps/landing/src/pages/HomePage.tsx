@@ -13,14 +13,14 @@ const reviews = [
   { id: 6, name: 'Maya Putri', rating: 5, text: 'Suka banget sama layanannya! Pickup & delivery gratis, hasil memuaskan.', avatar: '👧' },
 ];
 
-// Gallery data - using placeholder images for now (replace with real photos)
+// Gallery data - using local images from assets
 const galleryImages = [
-  { id: 1, src: 'https://www.instagram.com/p/CwaiF5Nv37T/?img_index=1', title: 'Testing', desc: 'Dari kuning kusam jadi putih kinclong' },
-  { id: 2, src: 'https://images.unsplash.com/photo-1608231387042-66d1773070a5?w=600', title: 'Adidas Ultraboost - Premium Care', desc: 'Full treatment + protection coating' },
-  { id: 3, src: 'https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?w=600', title: 'Jordan Retro - Restoration', desc: 'Restorasi total sneakers vintage' },
-  { id: 4, src: 'https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?w=600', title: 'New Balance - Quick Wash', desc: 'Bersih dalam 1 hari' },
-  { id: 5, src: 'https://images.unsplash.com/photo-1539185441755-769473a23570?w=600', title: 'Converse - Unyellowing', desc: 'Sole putih kembali seperti baru' },
-  { id: 6, src: 'https://images.unsplash.com/photo-1460353581641-37baddab0fa2?w=600', title: 'Running Shoes - Deep Clean', desc: 'Siap untuk lari lagi!' },
+  { id: 1, src: '/images/gallery images/gallery1.jpg', title: 'Deep Clean Treatment', desc: 'Dari kuning kusam jadi putih kinclong' },
+  { id: 2, src: '/images/gallery images/gallery2.webp', title: 'Premium Care', desc: 'Full treatment + protection coating' },
+  { id: 3, src: '/images/gallery images/gallery3.jpg', title: 'Restoration', desc: 'Restorasi total sneakers vintage' },
+  { id: 4, src: '/images/gallery images/gallery4.webp', title: 'Quick Wash', desc: 'Bersih dalam 1 hari' },
+  { id: 5, src: '/images/gallery images/gallery5.jpg', title: 'Unyellowing', desc: 'Sole putih kembali seperti baru' },
+  { id: 6, src: '/images/gallery images/gallery6.jpg', title: 'Deep Clean', desc: 'Siap untuk lari lagi!' },
 ];
 
 // Icon mapping for services
@@ -76,7 +76,7 @@ export default function HomePage() {
                   BOOKING SEKARANG →
                 </Link>
                 <a
-                  href="https://wa.me/6288210806864"
+                  href="https://wa.me/+628123456789"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-green-500 text-white px-8 py-4 font-bold text-lg border-brutal shadow-brutal hover-lift active-press inline-flex items-center gap-2"
@@ -90,7 +90,7 @@ export default function HomePage() {
               <div className="bg-white border-brutal shadow-brutal-lg p-8 transform rotate-2">
                 <div className="aspect-square bg-gradient-to-br from-gray-100 to-gray-200 flex items-center justify-center rounded-lg overflow-hidden">
                   <img 
-                    src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=600" 
+                    src="/images/main.jpeg" 
                     alt="Sneaker"
                     className="w-full h-full object-cover"
                   />
@@ -300,7 +300,7 @@ export default function HomePage() {
               BOOKING SEKARANG
             </Link>
             <a
-              href="https://wa.me/6288210806864"
+              href="https://wa.me/+628123456789"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-green-500 text-white px-12 py-5 font-bold text-xl border-brutal shadow-brutal-lg inline-flex items-center gap-2 hover-lift active-press"

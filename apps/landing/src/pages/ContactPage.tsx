@@ -43,9 +43,9 @@ export default function ContactPage() {
               <div className="space-y-6">
                 <div className="bg-lime-400 border-brutal shadow-brutal p-6">
                   <h3 className="font-bold text-lg mb-2">📱 WHATSAPP</h3>
-                  <p>+62 812-XXXX-XXXX</p>
+                  <p>082143366966</p>
                   <a 
-                    href="https://wa.me/62812XXXXXXXX" 
+                    href="082143366966" 
                     target="_blank"
                     className="inline-block mt-4 bg-black text-white px-4 py-2 font-bold"
                   >
@@ -58,15 +58,15 @@ export default function ContactPage() {
                 </div>
                 <div className="bg-white border-brutal shadow-brutal p-6">
                   <h3 className="font-bold text-lg mb-2">📍 LOKASI</h3>
-                  <p>Jakarta, Indonesia</p>
+                  <p>Malang, Indonesia</p>
                   <p className="text-sm text-gray-600 mt-2">
                     (Workshop only - tidak menerima walk-in)
                   </p>
                 </div>
                 <div className="bg-white border-brutal shadow-brutal p-6">
                   <h3 className="font-bold text-lg mb-2">⏰ JAM OPERASIONAL</h3>
-                  <p>Senin - Sabtu: 09:00 - 18:00</p>
-                  <p>Minggu: Libur</p>
+                  <p>Senin - Jumat: 08:30 - 17:00</p>
+                  <p>Sabtu & Minggu: Libur</p>
                 </div>
               </div>
             </div>

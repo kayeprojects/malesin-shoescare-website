@@ -11,7 +11,7 @@ export default function Layout() {
             <div className="bg-orange-500 text-black font-bold text-xl px-3 py-1 border-brutal shadow-brutal">
               malesin
             </div>
-            <span className="font-bold text-lg">_shoescare</span>
+            <span className="font-bold text-lg">shoescare</span>
           </Link>
           
           <div className="hidden md:flex items-center space-x-6">
@@ -25,7 +25,7 @@ export default function Layout() {
               KONTAK
             </Link>
             <a 
-              href="https://wa.me/?" 
+              href="https://wa.me/+628123456789" 
               target="_blank"
               rel="noopener noreferrer"
               className="bg-green-500 text-white px-4 py-2 font-bold hover:bg-green-600 transition-colors flex items-center gap-2"
@@ -57,7 +57,7 @@ export default function Layout() {
                 <div className="bg-orange-500 text-black font-bold text-lg px-3 py-1">
                   malesin
                 </div>
-                <span className="font-bold">_shoescare</span>
+                <span className="font-bold">shoescare</span>
               </div>
               <p className="text-gray-400">
                 Layanan cuci sepatu premium dengan kualitas terbaik.
@@ -89,9 +89,9 @@ export default function Layout() {
                 <li className="flex items-start space-x-2">
                   <MapPin className="w-5 h-5 text-orange-400 flex-shrink-0 mt-0.5" />
                   <div>
-                    <p>TirtoUtomo, Landungsari</p>
+                    <p>Tirto Utomo, Landungsari</p>
                     <p>Malang</p>
-                    <p className="text-lime-400 text-sm mt-1">✨ Free pickup area!</p>
+                    <p className="text-lime-400 text-sm mt-1">✨ Free pickup! (minimal jarak 3km)</p>
                   </div>
                 </li>
               </ul>
@@ -103,7 +103,7 @@ export default function Layout() {
               <ul className="space-y-3 text-gray-400">
                 <li>
                   <a 
-                    href="https://wa.me/?" 
+                    href="https://wa.me/+628123456789" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="flex items-center space-x-3 hover:text-green-400 transition-colors group"
@@ -111,7 +111,7 @@ export default function Layout() {
                     <div className="bg-green-500 p-2 rounded-lg group-hover:scale-110 transition-transform">
                       <MessageCircle className="w-5 h-5 text-white" />
                     </div>
-                    <span>+62 882-1080-6864</span>
+                    <span>0821 4336 6966</span>
                   </a>
                 </li>
                 <li>
@@ -145,7 +145,7 @@ export default function Layout() {
                 INSTAGRAM
               </a>
               <a 
-                href="https://wa.me/?" 
+                href="https://wa.me/+628123456789" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="bg-green-500 text-white px-4 py-2 font-bold hover:bg-green-600 transition-colors flex items-center gap-2"
